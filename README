@@ -1,0 +1,43 @@
+Bundle-Text-SenseClusters version 0.98
+=======================================
+
+This package contains all of the CPAN modules required for
+version 0.98 of the SenseClusters package, available from
+CPAN as Text-SenseClusters or L<http://senseclusters.sourceforge.net>.
+
+INSTALLATION
+
+Use this bundle to install SenseClusters and all of its dependent CPAN 
+modules. 
+
+ perl -MCPAN -e 'install Bundle::Text::SenseClusters';
+
+You then only need to install SVDPACKC and Cluto. See 
+L<http://search.cpan.org/dist/Text-SenseClusters/INSTALL> for futher 
+details. 
+
+To install this module manually type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2008 by Ted Pedersen
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, 
+USA.
+

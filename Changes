@@ -1,0 +1,12 @@
+Revision history for Perl extension Bundle::Text::SenseClusters.
+
+0.98  Sun Mar 23
+
+	- renamed as Bundle-Text-SenseClusters
+	- added Text-SenseClusters to the bundle, in addition to 
+	 	dependencies
+
+0.96  Fri Jul  7 22:12:55 2006
+	- original version; created by h2xs 1.23 with options
+		-AXcfn Bundle::SenseClusters
+
