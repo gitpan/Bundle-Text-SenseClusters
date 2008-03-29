@@ -1,31 +1,28 @@
 package Bundle::Text::SenseClusters;
 
-$VERSION = '0.98';
+$VERSION = '1.00';
 
 1;
 __END__
 
 =head1 NAME
 
-Bundle::Text::SenseClusters Bundle of CPAN modules required for SenseClusters
-
-=head1 CONTENTS
-
-Bit::Vector                     	6.4      
-Carp::Clan                      	5.3      
-Algorithm::Munkres             		0.07   
-Algorithm::RandomMatrixGeneration       0.04 
-Math::BigInt                   		1.77     
-Math::SparseMatrix             		0.01   
-Math::SparseVector            	 	0.03      
-PDL                            		2.4.1  
-Set::Scalar                    		1.20   
-Text::NSP                      		1.05    
-Text::SenseClusters                     0.98
+Bundle::Text::SenseClusters Bundle to install SenseClusters and all of 
+its dependent CPAN modules
 
 =head1 SYNOPSIS
 
-C<perl -MCPAN -e 'install Bundle::SenseClusters'>
+To install SenseClusters and all dependent CPAN modules automatically, 
+just run the following: 
+
+C<perl -MCPAN -e 'install Bundle::Text::SenseClusters'>
+
+To manually install this module type the following: 
+
+ perl Makefile.PL
+ make
+ make test
+ make install 
 
 =head1 DESCRIPTION
 
@@ -34,7 +31,31 @@ required CPAN modules.
 
 In addition to this Bundle, you must also download and install two C 
 packages, CLUTO and SVDPACKC, in order to install SenseClusters and 
-make it fully operational. 
+make it fully operational. These are available in Text-SenseClusters in 
+/External. There is a script called C<install.sh> to help you install 
+them.
+
+=head1 CONTENTS
+
+Carp::Clan                      	5.3      
+
+Bit::Vector                     	6.3      
+
+PDL                            		2.4.1  
+
+Set::Scalar                    		1.19   
+
+Algorithm::Munkres             		0.07   
+
+Algorithm::RandomMatrixGeneration       0.06 
+
+Math::SparseMatrix             		0.02   
+
+Math::SparseVector            	 	0.04      
+
+Text::NSP                      		1.09    
+
+Text::SenseClusters                     1.00
 
 =head1 SEE ALSO
 

@@ -1,43 +1,69 @@
-Bundle-Text-SenseClusters version 0.98
-=======================================
+NAME
+    Bundle::Text::SenseClusters Bundle to install SenseClusters and all of
+    its dependent CPAN modules
 
-This package contains all of the CPAN modules required for
-version 0.98 of the SenseClusters package, available from
-CPAN as Text-SenseClusters or L<http://senseclusters.sourceforge.net>.
+SYNOPSIS
+    To install SenseClusters and all dependent CPAN modules automatically,
+    just run the following:
 
-INSTALLATION
+    "perl -MCPAN -e 'install Bundle::Text::SenseClusters'"
 
-Use this bundle to install SenseClusters and all of its dependent CPAN 
-modules. 
+    To manually install this module type the following:
 
- perl -MCPAN -e 'install Bundle::Text::SenseClusters';
+     perl Makefile.PL
+     make
+     make test
+     make install 
 
-You then only need to install SVDPACKC and Cluto. See 
-L<http://search.cpan.org/dist/Text-SenseClusters/INSTALL> for futher 
-details. 
+DESCRIPTION
+    This bundle includes the core SenseClusters distribution, as well as all
+    required CPAN modules.
 
-To install this module manually type the following:
+    In addition to this Bundle, you must also download and install two C
+    packages, CLUTO and SVDPACKC, in order to install SenseClusters and make
+    it fully operational. These are available in Text-SenseClusters in
+    /External. There is a script called "install.sh" to help you install
+    them.
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+CONTENTS
+    Carp::Clan 5.3
 
-COPYRIGHT AND LICENCE
+    Bit::Vector 6.3
 
-Copyright (C) 2008 by Ted Pedersen
+    PDL 2.4.1
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+    Set::Scalar 1.19
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, 
-USA.
+    Algorithm::Munkres 0.07
+
+    Algorithm::RandomMatrixGeneration 0.06
+
+    Math::SparseMatrix 0.02
+
+    Math::SparseVector 0.04
+
+    Text::NSP 1.09
+
+    Text::SenseClusters 1.00
+
+SEE ALSO
+    <http://senseclusters.sourceforge.net>
+
+AUTHOR
+    Ted Pedersen, <tpederse at d.umn.edu>
+
+COPYRIGHT AND LICENSE
+    Copyright (C) 2008 by Ted Pedersen
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation; either version 2 of the License, or (at your
+    option) any later version. This program is distributed in the hope that
+    it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
