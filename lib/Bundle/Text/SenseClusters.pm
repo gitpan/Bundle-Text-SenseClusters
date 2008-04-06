@@ -1,21 +1,21 @@
 package Bundle::Text::SenseClusters;
 
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 1;
 __END__
 
 =head1 NAME
 
-Bundle::Text::SenseClusters Bundle to install SenseClusters and all of 
-its dependent CPAN modules
+Bundle::Text::SenseClusters - Bundle to install Text::SenseClusters and 
+all of its dependent CPAN modules.
 
 =head1 SYNOPSIS
 
-To install SenseClusters and all dependent CPAN modules automatically, 
-just run the following: 
+To install L<Text::SenseClusters> and all dependent CPAN modules 
+automatically, just run the following: 
 
-C<perl -MCPAN -e 'install Bundle::Text::SenseClusters'>
+ C<perl -MCPAN -e 'install Bundle::Text::SenseClusters'>
 
 To manually install this module type the following: 
 
@@ -27,13 +27,19 @@ To manually install this module type the following:
 =head1 DESCRIPTION
 
 This bundle includes the core SenseClusters distribution, as well as all 
-required CPAN modules. 
+required CPAN modules. The core SenseClusters distribution consists of 
+numerous Perl programs (found in the /Toolkit directory), plus SVDPACKC, 
+a 3rd party C package that performs Singular Value Decomposition. 
 
-In addition to this Bundle, you must also download and install two C 
-packages, CLUTO and SVDPACKC, in order to install SenseClusters and 
-make it fully operational. These are available in Text-SenseClusters in 
-/External. There is a script called C<install.sh> to help you install 
-them.
+In addition to this Bundle, you must also download and install the  
+clustering toolkit Cluto, in order to make SenseClusters operational. 
+There is a script called C<install.sh> in SenseClusters /External 
+directory that will automatically download and install Cluto, and it 
+will also compile and install SVDPACKC. 
+
+Thus, you should be able to install SenseClusters by simply installing 
+this Bundle and then going to SenseClusters/External directory and  
+running the C<install.sh> script. 
 
 =head1 CONTENTS
 
@@ -55,15 +61,15 @@ Math::SparseVector            	 	0.04
 
 Text::NSP                      		1.09    
 
-Text::SenseClusters                     1.00
+Text::SenseClusters                     1.01
 
 =head1 SEE ALSO
 
-L<http://senseclusters.sourceforge.net>
+ L<http://senseclusters.sourceforge.net>
 
 =head1 AUTHOR
 
-Ted Pedersen, E<lt>tpederse at d.umn.eduE<gt>
+ Ted Pedersen, E<lt>tpederse at d.umn.eduE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 

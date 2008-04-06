@@ -1,12 +1,12 @@
 NAME
-    Bundle::Text::SenseClusters Bundle to install SenseClusters and all of
-    its dependent CPAN modules
+    Bundle::Text::SenseClusters - Bundle to install Text::SenseClusters and
+    all of its dependent CPAN modules.
 
 SYNOPSIS
-    To install SenseClusters and all dependent CPAN modules automatically,
-    just run the following:
+    To install Text::SenseClusters and all dependent CPAN modules
+    automatically, just run the following:
 
-    "perl -MCPAN -e 'install Bundle::Text::SenseClusters'"
+     C<perl -MCPAN -e 'install Bundle::Text::SenseClusters'>
 
     To manually install this module type the following:
 
@@ -17,13 +17,19 @@ SYNOPSIS
 
 DESCRIPTION
     This bundle includes the core SenseClusters distribution, as well as all
-    required CPAN modules.
+    required CPAN modules. The core SenseClusters distribution consists of
+    numerous Perl programs (found in the /Toolkit directory), plus SVDPACKC,
+    a 3rd party C package that performs Singular Value Decomposition.
 
-    In addition to this Bundle, you must also download and install two C
-    packages, CLUTO and SVDPACKC, in order to install SenseClusters and make
-    it fully operational. These are available in Text-SenseClusters in
-    /External. There is a script called "install.sh" to help you install
-    them.
+    In addition to this Bundle, you must also download and install the
+    clustering toolkit Cluto, in order to make SenseClusters operational.
+    There is a script called "install.sh" in SenseClusters /External
+    directory that will automatically download and install Cluto, and it
+    will also compile and install SVDPACKC.
+
+    Thus, you should be able to install SenseClusters by simply installing
+    this Bundle and then going to SenseClusters/External directory and
+    running the "install.sh" script.
 
 CONTENTS
     Carp::Clan 5.3
@@ -44,13 +50,13 @@ CONTENTS
 
     Text::NSP 1.09
 
-    Text::SenseClusters 1.00
+    Text::SenseClusters 1.01
 
 SEE ALSO
-    <http://senseclusters.sourceforge.net>
+     L<http://senseclusters.sourceforge.net>
 
 AUTHOR
-    Ted Pedersen, <tpederse at d.umn.edu>
+     Ted Pedersen, E<lt>tpederse at d.umn.eduE<gt>
 
 COPYRIGHT AND LICENSE
     Copyright (C) 2008 by Ted Pedersen
